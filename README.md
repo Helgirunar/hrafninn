@@ -1,4 +1,4 @@
-# Simple Blog Website
+# Hrafninn
 
 This is a simple blog website built with **React** and **Vite** for the frontend, **.NET Core** for the backend, and **MySQL** as the database. The website also includes an internal system that supports file uploads (images and videos).
 
