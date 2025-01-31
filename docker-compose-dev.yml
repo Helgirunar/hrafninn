@@ -1,0 +1,33 @@
+version: "3.9"
+services:
+ frontend:
+   build:
+     context: ./frontend
+     dockerfile: Dockerfile
+   container_name: frontend
+   restart: always
+   ports:
+     - 3000:3000
+   volumes:
+     - ./frontend:/app
+     - /app/node_modules
+   environment:
+     - VITE_APP_BACKEND_ADDRESS=http://localhost/api
+   networks:
+     - network
+ database: 
+    image: mysql
+    container_name: hrafninn-mysql
+    volumes:
+      - db-volume:/var/lib/mysql
+    restart: always
+    environment:
+      MYSQL_DATABASE: defaultdb
+      MYSQL_ROOT_PASSWORD: test123
+
+networks:
+ network:
+ 
+ 
+volumes:
+  db-volume:
