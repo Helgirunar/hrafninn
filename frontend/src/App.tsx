@@ -1,10 +1,13 @@
+import { useState, useEffect, createContext } from 'react';
 import './App.css'
 import Frontpage from './pages/frontpage/Frontpage'
+import AppProvider from './AppProvider';
 
 function App() {
-
   return (
-	<Frontpage/>
+	<AppProvider>
+		<Frontpage/>
+	</AppProvider>
   )
 }
 

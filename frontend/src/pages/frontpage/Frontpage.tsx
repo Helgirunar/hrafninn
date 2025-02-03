@@ -1,5 +1,4 @@
 import styles from './Frontpage.module.css';
-import Card from '../../components/card/Card';
 import Footer from '../../components/footer/Footer';
 import Header from '../../components/header/Header';
 
