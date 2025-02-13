@@ -1,30 +1,28 @@
 /* card.css */
 .container {
+	z-index:100;
+  	position: relative;
+  	background-color: #f5f1ed;
 	width: 100vw;
-	padding-left:10vw;
-	padding-right:10vw;
+	padding-left:20vw;
+	padding-right:20vw;
 	height: 20vh;
 	max-height: 100px;
-	display: flex;
-	border-bottom: 2px solid gray;
+	display:grid;
+  	grid-template-columns: 50% 50%;
 }
-.link {
-	color: black;
 
-}
-.link:hover {
-	color:gray;
-}
 .logoContainer {
 	align-items: center;
-	width:65vh;
 	color:black;
 	display: flex;
 }
+
 .logo {
 	height: 6vh;
 	margin-right: 20px;
 }
+
 .logoLink {
 	color:black;
 	align-items: center;
@@ -34,40 +32,64 @@
 
 .linksContainer {
 	align-items: center;
-	width: 35vh;
 	display: flex;
-	justify-content: space-around;
+	gap:5vh;
+	justify-content: center;
 }
 
-.navBarContainer {
+.navBarContainerHide {
+	z-index:50;
 	position:absolute;
-	background-color: #f5f5f5;
-	border: 2px solid gray;
-	padding-top:1vh;
-	padding-bottom:1vh;
-	right: 0px;
-	top: 98px;
-	width: 35%;
+	width:100vw;
+	height:44vh;
+  	background-color: #252323;
+	border-bottom: 2px solid #6F8397;
+	padding-top:2vh;
+	padding-bottom:2vh;
+	left: 0px;
+	top:-32vh; /* height(44vh) - header(12vh) height to make it be hidden */
 	display: flex;
 	flex-direction: column;
 	text-align: center;
+    -webkit-transition: 1s ease-in;
+    -moz-transition: 1s ease-in;
+    -ms-transition: 1s ease-in;
+    transition: 1s ease-in;
+}
+
+.navBarContainer {
+	z-index:50;
+	position:absolute;
+	width:100vw;
+	height:44vh;
+  	background-color: #252323;
+	border-bottom: 1px solid #6F8397;
+	box-shadow: 2px 2px 2px #6F8397;
+	padding-top:2vh;
+	padding-bottom:2vh;
+	left: 0px;
+	top:12vh;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+    -webkit-transition: 1s ease-out;
+    -moz-transition: 1s ease-out;
+    -ms-transition: 1s ease-out;
+    transition: 1s ease-out;
 }
 .navBarButton {
+	position: absolute;
 	padding-top:1px;
 	font-size:4vh;
-	margin-top: 5px;
+	right: 2vh;
 	align-self: center;
 	color: black;
 }
 .navBarLink {
 	padding-top:1px;
-	color: black;
+	color: #f5f1ed;
 	padding-bottom:1px;
 	font-size:2.2vh;
 	align-self: center;
-	color: black;
 	margin-right: 5%;
-}
-a:hover {
-	color:gray;
 }

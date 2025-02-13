@@ -1,0 +1,31 @@
+.primaryText {
+	color: #252323;
+}
+
+.primaryText:hover {
+	color: #454343;
+}
+
+.secondaryText {
+	color: #F5F1ED;
+}
+
+.secondaryText:hover {
+	color: #D5D1CD;
+}
+
+.primaryFill {
+	background-color: #252323;
+}
+
+.primaryFill:hover {
+	background-color: #454343;
+}
+
+.secondaryFill {
+	background-color: #F5F1ED;
+}
+
+.secondaryFill:hover {
+	background-color: #D5D1CD;
+}
