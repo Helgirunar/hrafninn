@@ -1,6 +1,7 @@
 import { useContext, useState } from 'react';
 import styles from './Header.module.css';
 import colorStyles from '../../css/Color.module.css';
+import fontStyles from '../../css/Font.module.css';
 import logo from '/raven.svg'
 import {AppContext} from '../../AppProvider';
 import { BsList } from "react-icons/bs";
@@ -39,7 +40,7 @@ function Header() {
 					<BsList />
 				</div>
 				:
-				<div className={styles.linksContainer}>
+				<div className={styles.navBarContainer}>
 					<Button text="Home" url="/" underline={true} color="primary"/>
 					<Button text="Blog" url="/blog" underline={true} color="primary"/>
 					<Button2 text="Login" url="/login" underline={true} color="primary"/>
@@ -48,7 +49,10 @@ function Header() {
 			</div>
 			{
 			(context.isMobile) ? 
-				<div className={isNavDown ? styles.navBarContainer : styles.navBarContainerHide}>
+				<div className={`
+					${isNavDown ? styles.navBarMobileContainerHide : styles.navBarMobileContainerShow} 
+					${styles.navBarMobileContainer}
+					${fontStyles.lg}`}>
 					<Button text="Home" url="/" underline={false} color="secondary"/>
 					<Button text="Blog" url="/blog" underline={false} color="secondary"/>
 					<Button text="Login" url="/login" underline={false} color="secondary"/>

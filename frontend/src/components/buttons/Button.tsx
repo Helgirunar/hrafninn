@@ -19,7 +19,10 @@ function Button(prop: ButtonProps) {
 	return (
 		<a
 			href={prop.url}
-			className={`${prop.underline ? styles.underline : ''} ${color}`}
+			className={`
+				${prop.underline ? styles.underline : ''} 
+				${color}
+			`}
 		>
 		{prop.text}
 		</a>

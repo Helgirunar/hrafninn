@@ -4,8 +4,6 @@
   	position: relative;
   	background-color: #f5f1ed;
 	width: 100vw;
-	padding-left:20vw;
-	padding-right:20vw;
 	height: 20vh;
 	max-height: 100px;
 	display:grid;
@@ -16,6 +14,7 @@
 	align-items: center;
 	color:black;
 	display: flex;
+	justify-content: center;
 }
 
 .logo {
@@ -30,45 +29,31 @@
 	justify-content: space-between;
 }
 
-.linksContainer {
+.navBarContainer {
 	align-items: center;
 	display: flex;
 	gap:5vh;
 	justify-content: center;
 }
-
-.navBarContainerHide {
-	z-index:50;
-	position:absolute;
-	width:100vw;
-	height:44vh;
-  	background-color: #252323;
-	border-bottom: 2px solid #6F8397;
-	padding-top:2vh;
-	padding-bottom:2vh;
-	left: 0px;
-	top:-32vh; /* height(44vh) - header(12vh) height to make it be hidden */
-	display: flex;
-	flex-direction: column;
-	text-align: center;
-    -webkit-transition: 1s ease-in;
-    -moz-transition: 1s ease-in;
-    -ms-transition: 1s ease-in;
-    transition: 1s ease-in;
+.navBarMobileContainerHide {
+	top:-16vh;
 }
-
-.navBarContainer {
+.navBarMobileContainerShow {
+	top:12vh;
+}
+.navBarMobileContainer {
 	z-index:50;
 	position:absolute;
 	width:100vw;
-	height:44vh;
+	height:28vh;
+	gap: 5px;
+	justify-content: center;
   	background-color: #252323;
 	border-bottom: 1px solid #6F8397;
 	box-shadow: 2px 2px 2px #6F8397;
 	padding-top:2vh;
 	padding-bottom:2vh;
 	left: 0px;
-	top:12vh;
 	display: flex;
 	flex-direction: column;
 	text-align: center;
@@ -77,6 +62,7 @@
     -ms-transition: 1s ease-out;
     transition: 1s ease-out;
 }
+
 .navBarButton {
 	position: absolute;
 	padding-top:1px;
@@ -86,7 +72,7 @@
 	color: black;
 }
 .navBarLink {
-	padding-top:1px;
+	padding-top:25px;
 	color: #f5f1ed;
 	padding-bottom:1px;
 	font-size:2.2vh;
