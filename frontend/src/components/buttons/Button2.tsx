@@ -4,7 +4,6 @@ import colorStyles from '../../css/Color.module.css';
 interface ButtonProps{
 	text: string;
 	url: string;
-	underline: boolean;
 	color: string; /* primary secondary third fourth */
 }
 function Button2(prop: ButtonProps) {

@@ -1,0 +1,25 @@
+.Container {
+	width: 100%;
+	max-width: 500px;
+	padding:4px;
+	padding-top:14px;
+	position:relative;
+	outline:none;
+}
+
+.submitButton {
+	padding: 5px;
+	background-color: #252323;
+	color: #fefefe;
+	font-size:large;
+	width: 100%;
+	min-height: 30px;
+	border: 0px;
+	border-radius: 6px;
+	outline:none;
+	transition: all 0.2s;
+}
+.submitButton:focus,.submitButton:hover {
+	background-color:#70798C;
+	border: none;
+}

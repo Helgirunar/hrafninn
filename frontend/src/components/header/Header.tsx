@@ -43,14 +43,14 @@ function Header() {
 				<div className={styles.navBarContainer}>
 					<Button text="Home" url="/" underline={true} color="primary"/>
 					<Button text="Blog" url="/blog" underline={true} color="primary"/>
-					<Button2 text="Login" url="/login" underline={true} color="primary"/>
+					<Button2 text="Login" url="/login" color="primary"/>
 				</div>
 				}
 			</div>
 			{
 			(context.isMobile) ? 
 				<div className={`
-					${isNavDown ? styles.navBarMobileContainerHide : styles.navBarMobileContainerShow} 
+					${isNavDown ? styles.navBarMobileContainerShow : styles.navBarMobileContainerHide} 
 					${styles.navBarMobileContainer}
 					${fontStyles.lg}`}>
 					<Button text="Home" url="/" underline={false} color="secondary"/>

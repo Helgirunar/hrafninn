@@ -1,0 +1,39 @@
+.Container {
+	width: 100%;
+	max-width: 500px;
+	padding:4px;
+	padding-top:14px;
+	position:relative;
+	transition: all 1s;
+	&:focus-within {
+		padding-top: 24px;
+		.label {
+      		left: 1%;  /* Move to the left when focused */
+			background-color:inherit;
+		}
+	}
+}
+
+.input {
+	padding: 5px;
+	background-color: #fefefe;
+	color: #252323;
+	font-size:large;
+	width: 100%;
+	min-height: 30px;
+	border-radius: 6px;
+	border: 3px #252323 solid;
+}
+.input:focus,.input:hover {
+	outline: none;
+	border: 3px #6F8397 solid;
+}
+.label 
+{
+	padding:0 8px 0px 8px;
+	background-color:#fefefe;
+	position: absolute;
+	top:0%;
+	left:5%;
+  	transition: all 1s ease-out;  /* Only transition the 'left' property */
+}
