@@ -10,8 +10,8 @@ interface TextProps{
 
 function Text(prop: TextProps) {
 	return (
-		<div className={styles.Container}>
-		<label className={styles.label}>{prop.label ?? prop.name}</label>
+		<div className={styles.Container} tabIndex={0}>
+		<label className={styles.label} tabIndex={0}>{prop.label ?? prop.name}</label>
 			<input 
 				className={styles.input}
 				type={prop.type}
@@ -19,6 +19,7 @@ function Text(prop: TextProps) {
 				name={prop.name} 
 				value={prop.value} 
 				onChange={prop.onChange}
+				tabIndex={0}
 			/>
 		</div>
 	);
