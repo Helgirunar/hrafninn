@@ -1,7 +1,9 @@
 .button {
+	outline: none;
 	text-align: center;
 	padding: 5px 10px;
 	padding-top: 4px;
 	border-radius:25px;
 	border:1px;
 }
+

@@ -20,6 +20,7 @@ function Button(prop: ButtonProps) {
 		<a
 			href={prop.url}
 			className={`
+				${styles.link}
 				${prop.underline ? styles.underline : ''} 
 				${color}
 			`}

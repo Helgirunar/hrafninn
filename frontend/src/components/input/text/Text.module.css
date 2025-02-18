@@ -1,6 +1,7 @@
 .Container {
 	width: 100%;
 	max-width: 500px;
+	outline: none;
 	padding:4px;
 	padding-top:14px;
 	position:relative;
@@ -32,6 +33,7 @@
 }
 .label 
 {
+	outline: none;
 	padding:0 8px 0px 8px;
 	background-color:#fefefe;
 	position: absolute;

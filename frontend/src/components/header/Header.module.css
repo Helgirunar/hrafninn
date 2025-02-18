@@ -24,6 +24,7 @@
 }
 
 .logoLink {
+	outline: none;
 	color:black;
 	align-items: center;
 	display: flex;
