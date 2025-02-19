@@ -1,0 +1,25 @@
+.Container {
+	height:240px;
+	width: 100vw;
+	max-width: 350px;
+	margin:0 auto;
+	outline: none;
+	padding:8px;
+	transition: all 1s;
+	border-radius: 25px;
+	border: 2px green solid;
+	color:#252323;
+}
+
+.title {
+	margin:2px;
+	padding:0px;
+	font-weight: 600;
+	font-size: x-large;
+}
+
+.detailContainer {
+	display: flex;
+	font-size:smaller;
+	font-style:italic;
+}

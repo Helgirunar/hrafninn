@@ -9,6 +9,7 @@
 }
 
 .submitButton {
+	user-select: none;
 	padding: 5px;
 	background-color: #252323;
 	color: #fefefe;

@@ -1,6 +1,7 @@
 html, body {
   height: 100vh;
   background-color: #fefefe;
+  overflow:auto; 
 }
 
 #root {
@@ -11,4 +12,7 @@ html, body {
 *::before,
 *::after {/* Stops borders from increasing the width and height, making it overlap the window size. */
   box-sizing: border-box;
+}
+.body {
+	padding-top:14vh;
 }
