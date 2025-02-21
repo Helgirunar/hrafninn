@@ -1,0 +1,29 @@
+.container {
+	height:80vh;
+	width:100%;
+	display: flex;
+	color:black;
+	justify-content: center;
+}
+
+.content {
+	padding-top: 40px;
+	height:86vh;
+	max-width:1330px;
+	display:grid;
+	gap:10px;
+	justify-content: center;
+	grid-template-rows: 270px;
+}
+
+.blogImageContainer {
+	border-radius: 25px;
+	border: 2px green solid;
+	color:white;
+}
+.blogImage {
+	inset-block-start: 1px;
+	border-radius: 25px;
+	border: 2px green solid;
+	color:white;
+}
