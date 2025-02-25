@@ -10,7 +10,7 @@ function ShowBlog() {
 		// fetch....
 		// Set the blog item
 		const getblogDetails = async () => {
-			await new Promise(resolve => setTimeout(resolve, 3000));
+			await new Promise(resolve => setTimeout(resolve, 1000));
 			setBlog({
 				title:"Helgi",
 				blogImage: "https://npr.brightspotcdn.com/dims4/default/b57a217/2147483647/strip/true/crop/1716x1144+0+0/resize/880x587!/quality/90/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F90%2F81%2Fb29603894d308800818f0fe6a1af%2F0p2a5737.JPG",
@@ -27,15 +27,15 @@ function ShowBlog() {
 	return (
 		<div className={styles.container}>
 			<div className={styles.content}>
-				<div className={styles.blogImage}>
+				<div className={styles.blogImageContainer}>
 					{
 						blog.blogImage ?
-						<img src={blog.blogImage} alt="blog image"></img>
+						<img src={blog.blogImage} className={styles.blogImage} alt="blog image"></img>
 						:
 						<></>
 					}
-					<h2>{blog.title ?? ''}</h2>
 				</div>
+				<h2>{blog.title ?? ''}</h2>
 			</div>
 		</div>
 	);

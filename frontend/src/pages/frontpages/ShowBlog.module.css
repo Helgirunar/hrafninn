@@ -17,13 +17,21 @@
 }
 
 .blogImageContainer {
+	height:30vh;
+	width:30vw;
+	max-height:600px;
+	max-width:1000px;
 	border-radius: 25px;
 	border: 2px green solid;
 	color:white;
+	overflow:hidden;
+	transition: 1s all ease;
 }
 .blogImage {
+	max-width:100%;
+	max-height:150%;
 	inset-block-start: 1px;
 	border-radius: 25px;
-	border: 2px green solid;
 	color:white;
+	object-fit:fill;
 }
